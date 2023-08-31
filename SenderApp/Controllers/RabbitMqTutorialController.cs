@@ -49,7 +49,7 @@ namespace SenderApp.Controllers
             return Ok("publish tutorial");
         }
         [HttpPost]
-        public async Task<IActionResult> UpdateBalance(BalanceUpdate model)
+        public async Task<IActionResult> ReqResTutorial(BalanceUpdate model)
         {
             var response = await _request.GetResponse<BalanceUpdate>(new
             {
